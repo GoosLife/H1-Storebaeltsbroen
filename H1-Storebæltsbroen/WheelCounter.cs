@@ -19,9 +19,9 @@ namespace H1_Storebæltsbroen
         public int TotalWheelsOnBridge(int motorcycleCount, int carCount, int busCount, int truckCount)
         {
             return (motorcycleCount * Vehicle.GetWheelAmount(VehicleType.Motorcycle)) +
-                   (carCount * Vehicle.GetWheelAmount(VehicleType.Car)) +
-                   (busCount * Vehicle.GetWheelAmount(VehicleType.Bus)) +
-                   (truckCount * Vehicle.GetWheelAmount(VehicleType.Truck));
+                   (carCount        * Vehicle.GetWheelAmount(VehicleType.Car)) +
+                   (busCount        * Vehicle.GetWheelAmount(VehicleType.Bus)) +
+                   (truckCount      * Vehicle.GetWheelAmount(VehicleType.Truck));
         }
     }
 }
